@@ -32,12 +32,12 @@ function Feedback() {
                     className={classes.textArea}
                 />
                 <input 
+                    className={classes.ratingInput}
                     type="number" 
                     value={rating} 
                     onChange={(e) => setRating(e.target.value)} 
                     min="1" 
                     max="5"
-                    className={classes.ratingInput}
                 />
                 <button type="submit" className={classes.submitButton}>Submit</button>
             </form>

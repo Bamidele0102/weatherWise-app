@@ -3,8 +3,15 @@ import backgroundImage from './assets/gradient_sky.jpg';
 
 const useStyles = makeStyles({
     container: {
-        marginTop: '50px',
-        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '20px',
+        backgroundColor: '#f5f5f5',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        maxWidth: '600px',
+        margin: '50px auto',
         zIndex: 1,
         position: 'relative',
     },
@@ -41,7 +48,7 @@ const useStyles = makeStyles({
         right: 0,
         bottom: 0,
         zIndex: -1,
-        backgroundImage: `url(${backgroundImage})`, // Replace with your background image path
+        backgroundImage: `url(${backgroundImage})`,
     },
     calendarContainer: {
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
@@ -50,23 +57,12 @@ const useStyles = makeStyles({
         marginBottom: '20px',
         overflow: 'hidden',
         height: 'fit-content',
-        maxHeight: 'calc(100vh - 200px)', // Adjust as necessary
+        maxHeight: 'calc(100vh - 200px)',
     },
     calendarTile: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-    },
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '20px',
-        backgroundColor: '#f5f5f5',
-        borderRadius: '8px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-        maxWidth: '600px',
-        margin: '0 auto',
     },
     title: {
         marginBottom: '20px',
